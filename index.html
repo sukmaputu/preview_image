@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Preview Image | I Putu Sukma Widyantara</title>
+</head>
+<body>
+    <div class="container">
+        <label for="file" class="header">
+            <div class="upload-file">
+                <a href="">
+                    <ion-icon id="upload-icon" name="cloud-upload-outline"></ion-icon>
+                </a>
+                <p id="upload-text">Browse File to Upload</p>
+            </div>
+        </label>
+        <label for="file" class="footer">
+            <p>Not Selected File</p>
+        </label>
+        <input type="file" id="file" accept="image/" onchange="showPreview(event)">
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
